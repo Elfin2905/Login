@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil Settings</title>
+    
+        <h1>Profil settings</h1>
+        <fieldset>
+            <legend>Base Data</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for='firstNameField'>First Name:</label>
+                    </td>
+                    <td>
+                        <input type='text' id='firstNameField' placeholder='Your First Name'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for='lastNameField'>Last Name:</label>
+                    </td>
+                    <td>
+                        <input type='text' id='lastNameField' placeholder='Your Last Name'>
+                    </td>
+                </tr>
+            </table>
+            <p> What do you prefer?</p>
+            <select name='preference'>
+                <option value='1'>Coffee</option>
+                <option value='2'>Tea</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell me something about you</legend>
+            <label for='aboutMe'>About me:</label><br>
+            <textarea name='aboutMe' id='aboutMe' placeholder="Tell me something about you"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Chat Layout</legend>
+            <table>
+                <input type='radio' name='chatLayout' value='1'>Username and message in one line<br>
+                <input type='radio' name='chatLayout' value='2'>Username and message in separated lines<br>
+            </table>
+        </fieldset>
+
+        <td>
+            <button>Save</button>
+            <button>Cancel</button>
+        </td>
+    </head>
+</html>
