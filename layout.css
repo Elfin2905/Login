@@ -1,6 +1,28 @@
 body{
-   background-color: #f0f0f0;
-   font-family: Arial, sans-serif;
    margin: 0;
-   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+   background-color: #ebf7f9;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.login h1{
+   text-align: center;
+   color: #333;
+   margin: 30px;
+}
+
+.login fieldset{
+   background-color: #ffffff;
+   padding: 30px;
+   width: 350px; /* Set the width */
+   border: dashed 1px #333;
+   border-radius: 5px;
+}
+
+.login input {
+   
 }
