@@ -17,32 +17,25 @@
         <h1>Please sign in </h1>
         <fieldset>
             <legend>Login</legend>
-            <table>
-                <tr>
-                    <td>Username:</td>
-                    <td>
-                        <input type="text" name="username">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td>
-                        <input type="password" name="user_pass">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" name="login" value="Login">
-                    </td>
-                    <td>
-                        <!---Muss ich der Link fro Register einfügen-->
-                        Not member yet? <a href="register.html">Register</a>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-    </form>
-    </div>
-</body>
+            <div class="input-box1">
+                <label for="username"></label>
+                <td>Username</td>
+                <input type="text" placeholder="Username" required>
+            </div>
+
+            <div class="input-box2">
+                <label for="password"></label>
+                <td>Password</td>
+                <input type="password" placeholder="Password" 
+                required>
+            </div> 
+          <div class="remember">
+        </div>
+    </fieldset>
+    <button type="submit" class="btn login-btn">Login</button>
+    <button type="button" class="btn register-btn">Register</button>
+</form>
+</div>
+  </body>
 
 </html>
