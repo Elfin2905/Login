@@ -5,38 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="layout.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="roxana.css">
 </head>
 
 <body>
-    <div class="login"> 
+    <div class="conteiner"> 
         <form action="login.php" method="post">
             <i class='bx bxs-conversation' style="color: dodgerblue;
-             display: block; text-align: center; font-size: 80px;"></i>
+             display: block; margin: 30px; text-align: center; font-size: 80px;"></i>
         <h1>Please sign in </h1>
         <fieldset>
             <legend>Login</legend>
 
             <div class="input-box">
-                <label for="username"></label>
-                <td>Username</td>
+                <label for="username">Username</label>
                 <input type="text" placeholder="Username" required>
             </div>
                
             <div class="input-box">
-                <label for="password"></label>
-                <td>Password</td>
-                <input type="password" placeholder="Password" 
+                <label for="password">Password</label>
+                <input type="text" placeholder="Password" 
                 required>
             </div>
-
-          <div class="remember">
         </div>
         
         <div class="button">
             <button type="submit" id="login" class="btn login-btn">Login</button>
-            <button type="button" id="register" class="btn register-btn">Register</button>
+            <button type="button" id="register" class="btn register-btn"><a href="register.html">Register</a>
+            
         </div>
 
          </form>
