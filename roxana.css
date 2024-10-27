@@ -6,41 +6,202 @@
     --blau: #1e90ff;
     --off-white: #F8F9FB;
     --grau: #A9A9A9;
-    --besucht: rgb(178, 56, 219);
+    --besucht: #3d3d3dca;
+    --purple: #7a147ab1;
 
     /* für weiß, rot und schwarz einfach white, red und black verwenden */
 }
 
+/* Allgemeine Styles Layout */
 .conteiner {
     width: 900px;
     margin: 0px auto;
-    padding: auto;
-
-}
-
-/* das verhindert, dass borders und padding die Größe von Elementen ändert, siehe Vorlesung und https://moderncss.dev/css-button-styling-guide/*/
-* {
+    padding: 20px;
     box-sizing: border-box;
+    background-color: #F8F9FB;
+    border-radius: 8px;
+    
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F8F9FB;
+/* Responisve */
+@media screen and (max-width: 900px) {
+    .conteiner {
+        width: 90%;
+        padding: 15px;
+    }
+    .button {
+        display: flex;              /* Buttons nebeneinander anordnen */
+        flex-direction: column;    /* Zentrierung der Buttons */
+        gap: 10px;                  /* Abstand zwischen den Buttons */         /* Umbruch bei zu kleinem Container */
+    }
+}
+
+/* Media Queries */
+@media(max-width: 480px) {
+    .conteiner {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: DM Sans;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 1em;
+}
+ 
+/* Text-Formatierung */
+h1, h2, h3 {
+    color: #333;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
 }
 
 h1 {
-    color: var(--black);
     font-size: 2em;
     text-align: center;
-    padding: 0px;
-    margin: 20px;
+    margin-bottom: 0.5em;
 }
 
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+p, li{
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+
+/* Allgemeine Styles Layout */
+.conteiner {
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F8F9FB;
+    border-radius: 8px;
+    
+}
+
+/* Responisve */
+@media screen and (max-width: 900px) {
+    .conteiner {
+        width: 90%;
+        padding: 15px;
+    }
+    .button {
+        display: flex;              /* Buttons nebeneinander anordnen */
+        flex-direction: column;    /* Zentrierung der Buttons */
+        gap: 10px;                  /* Abstand zwischen den Buttons */         /* Umbruch bei zu kleinem Container */
+    }
+}
+
+/* Media Queries */
+@media(max-width: 480px) {
+    .conteiner {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: DM Sans;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 1em;
+}
+ 
+/* Text-Formatierung */
+h1, h2, h3 {
+    color: #333;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+p, li{
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* Formulare */
+input[text="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
+
+input[text="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;   
+}
+
+/* Login */
 legend {
     font-size: 2.0em;
     font-weight: bold;
     text-align: left;
     padding: 10px;
+    flex-direction: column;
 }
 
 input[type=text] {
@@ -58,42 +219,129 @@ label {
     font-size: 15px;
 }
 
-/* #login{
-    background-color: #1e90ff;
-    color: white;
-    width: 45%;
-    height: 40px;
-    margin: 10px;
-    display: center;
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
 }
 
-#register {
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.login-btn{
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+}
+
+.register-btn{
     background-color: #A9A9A9;
     color: white;
-    width: 45%;
-    height: 40px;
-    margin: 10px;
-    display: center;
-} */
-
-.btn {
-    background-color: #1e90ff;
-    color: white;
-    width: 200px;
-    height: 40px;
-    margin: 20px;
+    border: none;
 }
 
-.button {
-    display: center;
+.register-btn:hover{
+    background-color: #3d3d3dca;
+}
+
+/* Register */
+legend {
+    font-size: 2.0em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 8px 8px 8px;
+    box-sizing: border-box;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.cancel-btn{
+    background-color: #A9A9A9;
+    color: white;
+    border: none;
+}
+
+.create-account{
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+}
+
+
+
+/*logout*/
+.conteiner {
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    color: var(--black);
+    font-size: 2em;
+    text-align: center;
+    padding: 0px;
+    margin: 20px;
+}
+p {
+    color: var(--black);
+    font-size: 2em;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
 }
 
 a {
+    color: var(--blau);
     text-decoration: none;
-    color: #1e90ff;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
 }
 
-#register:hover {
-    background-color: #1e90ff;
-    color: white;
+/* Icons */
+.icon {
+    font-family: 'FontAwesome';
+    font-size: 1.5em;
+    color: var(--blau);
+    margin-right: 8px;
+    display: block;
+    text-align: center;
 }
+
+
+
+/*freunde*/
+

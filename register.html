@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Register</title>
-
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="roxana.css">
     </head>
-    <body>
-        <center>
-            <h1>Register</h1>
-            <form action="" method="">
-                <table>
-                    <tr>
-                        <td>Username:</td>
-                        <td>
-                            <input type="text" name="username">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td>
-                            <input type="password" name="user_pass" >
-                    </tr>
-                    <tr>
-                        <td>Confirm Password:</td>
-                        <td>
-                            <input type="password" name="confirm password" >
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><button>Cancel</button></td> <td><button>Create Account</button></td>
-                    </tr>
-                   
-                </table>
 
+    <body>
+        <div class="container">
+            <from action="register.php" method="post">
+            <i class='bx bxs-user-circle' style="color: dodgerblue;
+            display:block; margin: 30px; text-align: center; font-size: 150px;"></i>
+            <h1>Register yourself</h1>
+            <fieldset>
+                <legend>Register</legend>
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="text" placeholder="Password" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Confirm Password</label>
+                    <input type="text" placeholder="Confirm Password" required>
+                </div>
+
+                <dic class ="button">   
+                    <button type="cancel" id="cancel" class="cancel-btn">Cancel</button>
+                    <button type="submit" id="create-account" class="create-account">Create Account</button>
+                </div>
+            </fieldset>
             </form>
-        </center>
     </body>
+        </div>
 
 </html>

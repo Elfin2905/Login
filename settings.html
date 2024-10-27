@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Settings</title>
-    
-        <h1>Profil settings</h1>
-        <fieldset>
+        <link rel="stylesheet" href="roxana.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Profil settings</h1>
+            <a href="login.html" id="login">Logout</a> |
+            <a href = "settings.html" id="settings">Settings</a>
+            <fieldset>
             <legend>Base Data</legend>
-            <table>
-                <tr>
-                    <td>
-                        <label for='firstNameField'>First Name:</label>
-                    </td>
-                    <td>
-                        <input type='text' id='firstNameField' placeholder='Your First Name'>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for='lastNameField'>Last Name:</label>
-                    </td>
-                    <td>
-                        <input type='text' id='lastNameField' placeholder='Your Last Name'>
-                    </td>
-                </tr>
-            </table>
+
+            <div class="firstNameField">
+                <label for='firstNameField'>First Name:</label>
+                <input type='text' id='firstNameField' placeholder='Your First Name'>
+            </div>
+            <div class="lastNameField">
+                <label for='lastNameField'>Last Name:</label>
+                <input type='text' id='lastNameField' placeholder='Your Last Name'>
+            </div>
+            
             <p> What do you prefer?</p>
             <select name='preference'>
                 <option value='1'>Coffee</option>
@@ -33,8 +32,11 @@
 
         <fieldset>
             <legend>Tell me something about you</legend>
-            <label for='aboutMe'>About me:</label><br>
-            <textarea name='aboutMe' id='aboutMe' placeholder="Tell me something about you"></textarea>
+
+            <div class="aboutMe">
+                <label for='aboutMe'>About me:</label>
+                <textarea name='aboutMe' id='aboutMe' placeholder="Tell me something about you"></textarea>
+            </div>
         </fieldset>
 
         <fieldset>
@@ -45,9 +47,9 @@
             </table>
         </fieldset>
 
-        <td>
-            <button>Save</button>
-            <button>Cancel</button>
-        </td>
-    </head>
+        <div class="button">
+            <button type="submit" id="cancel" class="cancel-btn">Cancel</button>
+            <button type="submit" id="save" class="save-btn">Save</button>
+        </div>
+    </body>
 </html>

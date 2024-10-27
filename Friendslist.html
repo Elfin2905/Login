@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <head>
+    <mata charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
+    <link rel="stylesheet" href="roxana.css">
 
+</head>
     <body>
+        <div class="container">
         <h1>Friends</h1>
+        
+        <div class="table"> 
         <tr>
             <td>
-                <a href="login.html">Logout</a> |
+                <a href="login.html" id="login">Logout</a> |
             </td>
             <td>
-                <a href = "settings.html">Settings</a>
+                <a href = "settings.html" id="settings">Settings</a>
             </td>
         </tr> 
+    </div>
         
         <hr>
+
 
         <ul>
             <li>Tom</li>
@@ -30,32 +39,16 @@
             <li>Friend request from Jerry </li> 
         </ol>
 
-        <tr>
-            <td>
-                <button>Accept</button>
-            </td>
-            <td>
-                <button>Decline</button>
-            </td>
-        </tr>
-
-        <hr>
+        <div class="button">
+            <button type="accept" id="accept" class="accept-btn">Accept</button>
+            <button type="decline" id="decline" class="decline-btn">Decline</button>
+        </div>
 
         <h3>Add Friend to List</h3>
-        <form action="" method="">
-            <table>
-                <tr>
-                    <td>Username:</td>
-                    <td>
-                        <input type="text" name="username">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button>Add Friend</button>
-                    </td>
-                </tr>
-            </table>
-
+        <div class="input-box">
+            <input type="text" placeholder="Add Friend" required>
+            <button type="submit" id="add" class="add-btn">Add Friend</button>
+        </div>
+        </div>
     </body>
-</head>
+</html>
