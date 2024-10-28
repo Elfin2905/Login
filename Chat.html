@@ -10,26 +10,29 @@
  <body>
     <div class="container">
     <h1>Chat with Tom</h1>
-
-    <!--Links zu "Back","Profile","Remove"-->
-    <div>
-        <a href="Friendslist.html">Back</a> |
-        <a href="settings.html">Profil</a> |
-        <a href="Friendslist.html">Remove Friend</a>
+    <div class="button3">
+        <a href="Friendslist.html" id="back">Back</a> 
+        <span>|</span>
+        <a href="settings.html">Profil</a>
+        <span>|</span>
+        <a href="Friendslist.html" id="remove">Remove Friend</a>
     </div>
 
-    <!--nachrichtenbereich-->
-    <div>
-        <p>Tom: Hi</p>
-        <p>Ich: Hi</p>
-        <p>Tom: Wie gehts?</p>
-        <p>Ich: Gut und dir?</p>
-        <p>Tom: Auch gut</p>
+    <hr>
 
+    <div class="chat">
+        <p>Tom:Hallo,Welt</p>
+        <p>Jerry:Wie gehts?</p>
+    </div>
+    
+    <hr>
+
+    <div class="input-box2">
         <form>
             <label for="messege"></label>
-            <input type="text" id="message" name="message" placeholder="New Message">
-            <button type="submit">Send</button>
+            <input type="text2" id="message" name="message" placeholder="New Message">
+            <button type="submit" id="send">Send</button>
         </form>
+    </div>
     </div>
  </body>

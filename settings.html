@@ -7,49 +7,42 @@
         <link rel="stylesheet" href="roxana.css">
     </head>
     <body>
-        <div class="container">
-            <h1>Profil settings</h1>
-            <a href="login.html" id="login">Logout</a> |
-            <a href = "settings.html" id="settings">Settings</a>
-            <fieldset>
+        <h1>Profil settings</h1>
+        <fieldset class="section base-data">
             <legend>Base Data</legend>
-
-            <div class="firstNameField">
-                <label for='firstNameField'>First Name:</label>
-                <input type='text' id='firstNameField' placeholder='Your First Name'>
+            <div class="form-group"></div>
+                <label for="firstName">First Name:</label>
+                <input type="text" placeholder="Your First Name" id="firstName">
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" placeholder="Your Last Name" id="lastName">  
             </div>
-            <div class="lastNameField">
-                <label for='lastNameField'>Last Name:</label>
-                <input type='text' id='lastNameField' placeholder='Your Last Name'>
+            <div class="preferences">
+                <label for="preferences">What do you prefer?</label>
+                <select name="preferences" id="preferences">
+                    <option value="1">Coffe</option>
+                    <option value="2">Tea</option>
+                    <option value="3">Neither</option>
+                </select>
             </div>
-            
-            <p> What do you prefer?</p>
-            <select name='preference'>
-                <option value='1'>Coffee</option>
-                <option value='2'>Tea</option>
-            </select>
-        </fieldset>
+        </fieldset>    
 
-        <fieldset>
+        <fieldset class="section about">
             <legend>Tell me something about you</legend>
-
-            <div class="aboutMe">
-                <label for='aboutMe'>About me:</label>
-                <textarea name='aboutMe' id='aboutMe' placeholder="Tell me something about you"></textarea>
-            </div>
+            <label for="aboutMe">About me:</label>
+            <textarea name="aboutMe" id="aboutMe" placeholder="Tell me something about you"></textarea>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="section chat-layout">
             <legend>Preferred Chat Layout</legend>
-            <table>
-                <input type='radio' name='chatLayout' value='1'>Username and message in one line<br>
-                <input type='radio' name='chatLayout' value='2'>Username and message in separated lines<br>
-            </table>
+            <label><input type="radio" name="chat" /> Username and message in one line</label>
+            <label><input type="radio" name="chat" /> Username and message in separated lines</label>
         </fieldset>
+        
 
-        <div class="button">
-            <button type="submit" id="cancel" class="cancel-btn">Cancel</button>
-            <button type="submit" id="save" class="save-btn">Save</button>
+        <div class="actions">
+            <button type="submit" id="save">Save</button>
+            <button type="submit" id="cancel">Cancel</button>
         </div>
     </body>
 </html>

@@ -8,19 +8,66 @@
     --grau: #A9A9A9;
     --besucht: #3d3d3dca;
     --purple: #7a147ab1;
+    --red: #fa3737;
 
     /* für weiß, rot und schwarz einfach white, red und black verwenden */
 }
 
 /* Allgemeine Styles Layout */
 .conteiner {
-    width: 900px;
-    margin: 0px auto;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #F8F9FB;
-    border-radius: 8px;
+    .conteiner {
+        background-color: #dadada;
+        width: 900px;
+        margin: 0px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
     
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #dadada;
+    margin: 0px auto;
+    max-width: 900px;        
+}
+
+/* Responisve */
+@media screen and (max-width: 900px) {
+    .conteiner {
+        width: 90%;
+        padding: 15px;
+    }
+    .button {
+        display: flex;              /* Buttons nebeneinander anordnen */
+        flex-direction: column;    /* Zentrierung der Buttons */
+        gap: 10px;                 /* Abstand zwischen den Buttons */         /* Umbruch bei zu kleinem Container */
+    }
+}
+
+/* Media Queries */
+@media(max-width: 900px) {
+    .conteiner {
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media(max-width: 480px) {
+    .conteiner {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 1em;
 }
 
 /* Responisve */
@@ -35,50 +82,36 @@
         gap: 10px;                  /* Abstand zwischen den Buttons */         /* Umbruch bei zu kleinem Container */
     }
 }
-
-/* Media Queries */
-@media(max-width: 480px) {
-    .conteiner {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    font-family: DM Sans;
-}
-
-input[type="text"], input[type="password"] {
-    font-size: 1em;
-}
  
 /* Text-Formatierung */
 h1, h2, h3 {
     color: #333;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-align: left;
 }
 
 h1 {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 0.5em;
+    text-align: left;
+    justify-content: flex-start;
+    margin-bottom: 1em;
 }
 
 h2 {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
 h3 {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }
 
-p, li{
+p,li{
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     margin-bottom: 1em;
@@ -86,122 +119,50 @@ p, li{
 
 /* Links */
 a {
+    font-family: "Roboto Condensed", sans-serif;
     color: #1e90ff;
     text-decoration: none;
 }
 
 a:hover {
     color: gray;
-}
-
-
-/* Allgemeine Styles Layout */
-.conteiner {
-    width: 900px;
-    margin: 0px auto;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #F8F9FB;
-    border-radius: 8px;
-    
-}
-
-/* Responisve */
-@media screen and (max-width: 900px) {
-    .conteiner {
-        width: 90%;
-        padding: 15px;
-    }
-    .button {
-        display: flex;              /* Buttons nebeneinander anordnen */
-        flex-direction: column;    /* Zentrierung der Buttons */
-        gap: 10px;                  /* Abstand zwischen den Buttons */         /* Umbruch bei zu kleinem Container */
-    }
-}
-
-/* Media Queries */
-@media(max-width: 480px) {
-    .conteiner {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    font-family: DM Sans;
-}
-
-input[type="text"], input[type="password"] {
-    font-size: 1em;
 }
  
-/* Text-Formatierung */
-h1, h2, h3 {
-    color: #333;
-    font-family: 'DM Sans', sans-serif;
-    text-align: left;
-}
-
-h1 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-p, li{
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-bottom: 1em;
-}
-
 /* Links */
 a {
+    font-family: "Roboto Condensed", sans-serif;
     color: #1e90ff;
     text-decoration: none;
 }
 
 a:hover {
     color: gray;
-}
-
-/* Formulare */
-input[text="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-   
-}
-
-input[text="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;   
 }
 
 /* Login */
+.conteiner {
+    background-color: #dadada;
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 legend {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2.0em;
     font-weight: bold;
     text-align: left;
     padding: 10px;
     flex-direction: column;
+}
+
+fieldset {
+    background-color: #F8F9FB;
+    border: 1px solid #727272;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 input[type=text] {
@@ -250,12 +211,29 @@ button{
 }
 
 /* Register */
+.conteiner {
+    background-color: #dadada;
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 legend {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2.0em;
     font-weight: bold;
     text-align: left;
     padding: 10px;
     flex-direction: column;
+}
+
+fieldset {
+    background-color: #F8F9FB;
+    border: 1px solid #727272;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 input[type=text] {
@@ -298,8 +276,6 @@ button{
     color: white;
     border: none;
 }
-
-
 
 /*logout*/
 .conteiner {
@@ -345,3 +321,406 @@ a {
 
 /*freunde*/
 
+@media screen and (max-width: 900px) {
+    body{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .button1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .friends-list {
+        padding: 10px;
+    }
+
+    .friends-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="text1"], input[placeholder="Add Friend"] {
+        width: 100%;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+}
+.conteiner {
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--black);
+    font-size: 2em;
+    margin: 20px;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.button1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    display: flex;         /* Macht die Links zu Flex-Elementen, die nebeneinander stehen */
+    gap: 5px;             /* Abstand zwischen den Links */
+    justify-content: flex-start;
+    align-items: center;  /* Links am linken Rand ausrichten */
+    border-radius: 4px;
+}
+
+.button1 a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    color: #7a147ab1;
+    text-decoration: none;
+    padding-bottom: 10px;
+   
+}
+
+#logout::before{
+    content: "<";
+    margin-right: 5px;
+    font-style: bold;
+}
+
+hr {
+    color:#333;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.friends-list {
+    background-color: #F8F9FB;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin:10px auto;
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.friends-list ul {
+    list-style-type: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.friends-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.friends-list li:last-child {
+    margin-bottom: 0; /* Remove margin-bottom for the last list item */
+}
+
+.badge {
+    background-color: var(--blau);
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    text-align: center;
+    height: 20px;
+    width: 10px;
+    margin-left:auto;
+
+}
+
+h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.request {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#accept {
+    background-color: #A9A9A9;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+}
+
+#decline {
+    background-color: #A9A9A9;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border: none;
+    cursor:pointer;
+}
+
+#accept:hover {
+    background-color: #3d3d3dca;
+}
+
+#decline:hover {
+    background-color: #3d3d3dca;
+}
+
+h4 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input[type="text1"], input[placeholder="Add Friend"] {
+    width: 850px;
+    height: 30px;
+    font-size: 1em;
+    width: 725px;
+}
+
+.add-btn {
+    background-color: #A9A9A9;
+    color: white;
+    padding: 10px 10px;
+    border: none;   
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-end; /* Align the button to the right */
+    margin-top: 10px; /* Add some space above the button */
+}
+
+.add-btn:hover {
+    background-color: #3d3d3dca;
+}
+
+/*Chat*/
+.conteiner {
+    width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--black);
+    font-size: 2em;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 50px;
+
+}
+
+.button3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    display: flex;         /* Macht die Links zu Flex-Elementen, die nebeneinander stehen */
+    gap: 5px;             /* Abstand zwischen den Links */
+    justify-content: flex-start;
+    align-items: center;  /* Links am linken Rand ausrichten */
+    border-radius: 4px;
+}
+
+.button3 a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    color: #7a147ab1;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.button3 #remove {
+    color: #e82626;
+}
+
+#back::before{
+    content: "<";
+    margin-right: 5px;
+    font-style: bold;
+}
+
+span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+hr {
+    color:#333;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: auto;
+    margin-bottom: 10px;
+}
+
+.chat {
+    background-color: #F8F9FB;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin:10px auto;
+}
+
+.chat p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.input-box2 input[type="text2"] {
+    width: 850px;
+    height: 35px;
+    font-size: 1em;
+    width: 725px;
+    margin: 1px 0;
+}
+
+#send {
+    background-color: #A9A9A9;
+    color: white;
+    padding: 10px 10px;
+    border: none;   
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-end; /* Align the button to the right */
+    margin-top: 10px; /* Add some space above the button */
+}
+
+#send:hover {
+    background-color: #3d3d3dca;
+}
+
+/* Profil settings */
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--black);
+    font-size: 2em;
+    text-align: left;
+    padding: 0px;
+    margin: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.section.base-data {
+    background-color: #F8F9FB;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding:15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding:0 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+ 
+/* ich muss noch korregieren */
+.preferences label {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.about label {
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* muss ich noch schauen */
+textarea {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.chat-layout label {
+    display: block;
+    margin: 8px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#save {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+}
+
+#cancel {
+    background-color: #A9A9A9;
+    color: white;
+    border: none;
+}
+
+#cancel:hover {
+    background-color: #3d3d3dca;
+}
+
+#save:hover {
+    background-color: #016da3ca;
+}

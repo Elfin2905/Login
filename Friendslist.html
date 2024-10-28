@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <head>
-    <mata charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
     <link rel="stylesheet" href="roxana.css">
 
 </head>
     <body>
         <div class="container">
-        <h1>Friends</h1>
+
+        <h1>Friends List</h1>
         
-        <div class="table"> 
-        <tr>
-            <td>
-                <a href="login.html" id="login">Logout</a> |
-            </td>
-            <td>
-                <a href = "settings.html" id="settings">Settings</a>
-            </td>
-        </tr> 
-    </div>
-        
-        <hr>
-
-
-        <ul>
-            <li>Tom</li>
-            <li>Jerry</li>
-            <li>Donald</li>
-            <li>Mini</li>
-            <li>Mickey</li>
-        </ul>
-
-        <hr>
-        
-        <h2>New Request</h2>
-        <ol start="1">
-            <li>Friend request from Jerry </li> 
-        </ol>
-
-        <div class="button">
-            <button type="accept" id="accept" class="accept-btn">Accept</button>
-            <button type="decline" id="decline" class="decline-btn">Decline</button>
+        <div class="button1">
+            <a href="logout.html" id="logout">Logout</a> 
+            <span>|</span>
+            <a href="settings.html" id="settings">Settings</a>
         </div>
+        
+        <hr>
 
-        <h3>Add Friend to List</h3>
-        <div class="input-box">
+        <div class="friends-list">
+            <h2>Friends List</h2>
+            <ul>
+            <li>Tom <span class="badge">3</span></li>
+            <li>Jerry <span class="badge">2</span></li>
+            <li>Donald</li>
+            <li>Deisy</li>
+        </ul>
+        </div>
+       
+        <hr>
+        
+        <h3>New Request</h3>
+        <div class="request">
+            <span>1. Friend request from <b>Track</b></span>
+            <div class="button2">
+                <button type="submit" id="accept" class="accept-btn">Accept</button>
+                <button type="submit" id="decline" class="decline">Decline</button>
+            </div>    
+        </div>
+        
+        <hr>
+
+        <h4>Add Friend to List</h4>
+        <div class="input-box1">
             <input type="text" placeholder="Add Friend" required>
             <button type="submit" id="add" class="add-btn">Add Friend</button>
         </div>
