@@ -694,10 +694,13 @@ textarea {
     box-sizing: border-box;
 }
 
-.chat-layout label {
-    display: block;
-    margin: 8px 0;
+fieldset.section.chat-layout label {
+    display: inline; /* Display the radio buttons inline */
+    align-items: center;
+    gap: 8px; /* Abstand zwischen Radio-Button und Text */
+    margin-bottom: 10px; /* Abstand zwischen den Optionen */
 }
+
 
 .actions {
     display: flex;
@@ -724,3 +727,82 @@ textarea {
 #save:hover {
     background-color: #016da3ca;
 }
+
+/* Profil */
+.rofile-conteiner {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.slidebar {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    display: flex;         /* Macht die Links zu Flex-Elementen, die nebeneinander stehen */
+    gap: 5px;             /* Abstand zwischen den Links */
+    justify-content: flex-start;
+    align-items: center;  /* Links am linken Rand ausrichten */
+    border-radius: 4px;
+}
+
+#backToChat {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    color: #7a147ab1;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#backToChat::before{
+    content: "<";
+    margin-right: 5px;
+    font-style: bold;
+}
+
+#removeFriend{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    color: #e82626;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.profil-content {
+    background-color: #F8F9FB;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.profil-content h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Flexbox für Info und Bild */
+.profile-content {
+    max-width: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Profilbild */
+.profil-picture {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    float: left;
+
+}
+
+.info-box p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: auto;
+}
+
